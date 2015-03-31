@@ -1,14 +1,4 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
-
-	<?php if ( has_post_thumbnail() ) : ?>
-	
-		<a class="post-image" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">	
-			
-			<?php the_post_thumbnail('post-image'); ?>
-			
-		</a> <!-- /featured-media -->
-			
-	<?php endif; ?>
 	
 	<div class="post-inner">
 				
