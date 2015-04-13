@@ -38,8 +38,13 @@
 }
 
 .header, 
-.blog-title {
+.blog-title a {
 	color: white;
+}
+
+.header,
+.blog-title,
+.blog-tagline {
 	text-align: left;
 }
 
