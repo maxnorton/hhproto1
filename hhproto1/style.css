@@ -13,12 +13,11 @@
 */
 
 .topbar {
-	background-color: rgb(255,255,255);
-	background-color: rgba(255,255,255,0.5);
 	border-top: 3px solid rgb(11, 147, 235);
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 9;
 }
 
 .topbar-anchor {
@@ -54,4 +53,9 @@
 
 .navigation {
 	display:none;
+}
+
+.transparent-white {
+	background-color: rgb(255,255,255);
+	background-color: rgba(255,255,255,0.5);
 }

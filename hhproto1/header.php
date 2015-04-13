@@ -8,6 +8,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 		 
 		<?php wp_head(); ?>
+
+		<script class="text/javascript">
+
+		jQuery(document).ready(function() {
+			var topbar = jQuery(".topbar");
+			var html = jQuery(window);
+
+			jQuery(document).on("scroll", html, function(e) {
+			  if (html.scrollTop() > 350) {
+			  	topbar.addClass('transparent-white');
+			  } else {
+			    topbar.removeClass('transparent-white');
+			  }
+			});
+		});
+		</script>
 	
 	</head>
 	
