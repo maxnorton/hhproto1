@@ -13,6 +13,14 @@
 	
 	<body <?php body_class(); ?>>
 		
+		<div class="topbar">
+
+			<a class="topbar-anchor" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
+				Heidi Hall
+			</a>
+
+		</div>
+
 		<div class="header-wrapper">
 		
 			<div class="header section bg-white small-padding">
