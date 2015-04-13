@@ -23,7 +23,7 @@
 
 		<div class="header-wrapper">
 		
-			<div class="header section bg-white small-padding">
+			<div class="header section small-padding">
 			
 				<div class="section-inner">
 					
