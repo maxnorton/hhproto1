@@ -30,11 +30,15 @@
 	padding: 5px;}
 
 .header-image {
-	max-height: 430px;
+	x-max-height: 430px;
 }
 
 .header-wrapper {
 	float: left;
+}
+
+.header {
+	padding-top: 90px;
 }
 
 .header, 
