@@ -2,7 +2,7 @@
 
 	<div class="widget widget-bio">
 		<div class="bio-image">
-			<img src="<?php echo get_stylesheet_directory() . '/heidi.jpg'; ?>" alt="Heidi Hall" />
+			<img src="<?php echo get_stylesheet_directory_uri() . '/heidi.jpg'; ?>" alt="Heidi Hall" />
 		</div>
 		<div class="widget-title">
 			<h2>Heidi Hall</h2>
