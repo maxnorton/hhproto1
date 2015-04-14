@@ -29,7 +29,7 @@
 	display: inline-block;
 	font-family: "open sans", arial, sans-serif;
 	margin: 0 0;
-	padding: 16px 8px;}
+	padding: 8px 5px;}
 
 .header-image {
 	x-max-height: 430px;
@@ -79,8 +79,8 @@
 }
 
 .shareicon {
-	height: 32px;
-	width: 32px;
+	height: 24px;
+	width: 24px;
 	margin: 0 10px;
 }
 
