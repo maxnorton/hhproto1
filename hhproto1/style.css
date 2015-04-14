@@ -81,6 +81,7 @@
 .facebook {
 	position: relative;
 	top: 5px;
+	border-radius: 5px;
 }
 
 /* Bio widget ------------------- */
