@@ -88,3 +88,8 @@
 	max-height: 250px;
 	overflow: hidden;
 }
+
+/* Fake responsiveness ------------- */
+.toggles {
+	display: none !important; /* hide mobile menu */
+}
