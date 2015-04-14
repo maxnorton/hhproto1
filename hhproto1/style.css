@@ -62,3 +62,20 @@
 	background-color: rgb(255,255,255);
 	background-color: rgba(255,255,255,0.5);
 }
+
+/* Bio widget ------------------- */
+.widget-bio {
+	position: relative;
+	top: -122px;
+}
+
+.bio-image {
+	border: 2px solid #ca2017;
+	padding: 8px;
+	border-radius: 5px;
+	width: 186px;
+	float: right;
+	margin: 0 0 2px 15px;
+	background: #fff;
+}
+
