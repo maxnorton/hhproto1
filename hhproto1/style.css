@@ -18,6 +18,9 @@
 	top: 0;
 	width: 100%;
 	z-index: 9;
+	perspective: 1000;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
 }
 
 .topbar-anchor {
