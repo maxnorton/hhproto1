@@ -82,3 +82,9 @@
 .widget-bio .widget-title {
 	margin-top: 100px;
 }
+
+/* Post formatting --------------- */
+.featured-image {
+	max-height: 250px;
+	overflow: hidden;
+}
