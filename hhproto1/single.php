@@ -103,9 +103,7 @@
 						</div> <!-- /post-navigation-inner -->
 					
 					</div> <!-- /post-navigation -->
-										
-					<?php comments_template( '', true ); ?>
-				
+														
 				</div> <!-- /post -->
 											                        
 		   	<?php endwhile; else: ?>
