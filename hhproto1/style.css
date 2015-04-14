@@ -93,3 +93,13 @@
 .toggles {
 	display: none !important; /* hide mobile menu */
 }
+
+@media (max-width:600px) {
+	.blog-title {
+		margin: 0;
+	}
+	.blog-tagline {
+		display: block;
+		padding-left: 24px;
+	}
+}
