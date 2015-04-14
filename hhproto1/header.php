@@ -35,6 +35,11 @@
 				Heidi Hall
 			</a>
 
+			<a class="topbar-share">
+				<img src="<?php echo get_stylesheet_directory_uri() . '/images/facebook-icon.png'; ?>" />
+				<img src="<?php echo get_stylesheet_directory_uri() . '/images/email.png'; ?>" />
+			</a>
+
 		</div>
 
 		<div class="header-wrapper">
