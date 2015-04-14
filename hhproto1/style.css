@@ -17,7 +17,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	x-z-index: 9;
+	z-index: 1600;
 	perspective: 1000;
 	-webkit-perspective: 1000;
 	-moz-perspective: 1000;
