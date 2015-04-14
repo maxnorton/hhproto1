@@ -1,11 +1,23 @@
 <div class="sidebar">
 
+	<div class="widget widget-bio">
+		<div class="bio-image">
+			<img src="<?php echo get_stylesheet_directory() . '/heidi.jpg'; ?>" alt="Heidi Hall" />
+		</div>
+		<div class="widget-title">
+			<h2>Heidi Hall</h2>
+		</div>
+		<div class="widget-content">
+			<p>Heidi Hall is a lifelong resident of Northern California, and is excited and ready to serve as the next Congresswoman for the 1st Congressional District. Raised by teachers, and as a daughter and mother of veterans, she knows full well the value of hard work. She is prepared to provide the vision and leadership that the people of the North State need.</p>
+		</div>
+	</div>	
+
 	<?php 
 		if (is_active_sidebar('sidebar')) { 
 			
 			dynamic_sidebar('sidebar'); 
 			
-		} else { // Fallback if the sideabr widget area is empty
+		} else { // Fallback if the sidebar widget area is empty
 			
 			echo '<div class="widgets">';
 			
