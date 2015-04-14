@@ -4,21 +4,7 @@
 				
 		<div class="post-header">
 
-			<?php if ( get_the_title() ) : ?>
-				
-			    <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-			    
-			<?php endif; ?>
-		    
-		    <?php if ( is_sticky() ) : ?>
-		    
-		    	<a href="<?php the_permalink(); ?>" title="<?php _e('Sticky post','lovecraft') ?>" class="sticky-post">
-			    	<div class="genericon genericon-star"></div>
-			    </a>
-		    
-		    <?php endif; ?>
-
-		    <?php if ( has_post_thumbnail() ) : ?>
+			<?php if ( has_post_thumbnail() ) : ?>
 				
 				<div class="featured-media">
 
@@ -39,7 +25,21 @@
 
 				</div>
 					
+			<?php endif;
+
+			if ( get_the_title() ) : ?>
+				
+			    <h2 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+			    
 			<?php endif; ?>
+		    
+		    <?php if ( is_sticky() ) : ?>
+		    
+		    	<a href="<?php the_permalink(); ?>" title="<?php _e('Sticky post','lovecraft') ?>" class="sticky-post">
+			    	<div class="genericon genericon-star"></div>
+			    </a>
+		    
+		    <?php endif; ?>
 		    
 		    <div class="post-meta">
 			    
