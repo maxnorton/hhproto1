@@ -70,6 +70,12 @@
 .topbar-share {
 	position: absolute;
 	right: 0;
+	top: 5px;
+	display: none;
+}
+
+.transparent-white .topbar-share {
+	display: inline-block;
 }
 
 .shareicon {
