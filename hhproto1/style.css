@@ -29,7 +29,7 @@
 	display: inline-block;
 	font-family: "open sans", arial, sans-serif;
 	margin: 0 0;
-	padding: 5px 15px;}
+	padding: 16px 8px;}
 
 .header-image {
 	x-max-height: 430px;
@@ -76,6 +76,11 @@
 	height: 32px;
 	width: 32px;
 	margin: 0 10px;
+}
+
+.facebook {
+	position: relative;
+	top: 5px;
 }
 
 /* Bio widget ------------------- */
