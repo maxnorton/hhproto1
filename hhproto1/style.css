@@ -95,6 +95,9 @@
 }
 
 @media (max-width:600px) {
+	.header {
+		max-width: 330px;
+	}
 	.blog-title {
 		margin: 0;
 	}
