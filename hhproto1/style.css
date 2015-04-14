@@ -89,6 +89,10 @@
 	overflow: hidden;
 }
 
+.single .header {
+	display: none; /* hide site title and tagline on single post pages */
+}
+
 /* Fake responsiveness ------------- */
 .toggles {
 	display: none !important; /* hide mobile menu */
