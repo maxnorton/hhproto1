@@ -54,6 +54,10 @@
 	text-align: left;
 }
 
+.blog-tagline {
+	font-weight: bold;
+}
+
 .navigation {
 	display:none;
 }
