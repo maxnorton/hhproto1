@@ -40,7 +40,12 @@
 }
 
 .header {
-	padding-top: 90px;
+	padding-top: 7px;
+	padding-left: 110px;
+}
+
+.header .section-inner {
+	margin: 0;
 }
 
 .header, 
@@ -51,11 +56,20 @@
 .header,
 .blog-title,
 .blog-tagline {
+	font-family: "open sans", arial, sans-serif;
 	text-align: left;
 }
 
+.blog-title {
+	font-size: 1.9em;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
 .blog-tagline {
-	font-weight: bold;
+	font-style: normal;
+	font-weight: normal;
+	margin-top: 8px;
 }
 
 .navigation {
