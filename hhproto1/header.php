@@ -63,7 +63,7 @@
 						<?php if ( get_bloginfo( 'description' ) ) : ?>
 						
 							<h4 class="blog-tagline">
-								<?php bloginfo('description'); ?>
+								<?php echo html_entity_decode( get_bloginfo('description') ); ?>
 							</h4>
 							
 						<?php endif; ?>
