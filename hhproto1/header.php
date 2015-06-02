@@ -53,10 +53,10 @@
 				<img src="<?php echo   get_stylesheet_directory_uri() . '/images/signature.gif'; ?>" alt="Heidi Hall" class="signature" />
 			</a>
 
-			<a class="topbar-share">
-				<i class="fa fa-facebook"></i>
-				<i class="fa fa-envelope-o"></i>
-			</a>
+			<div class="topbar-share">
+				<a href="https://facebook.com/sharer/sharer.php"><i class="fa fa-facebook"></i></a>
+				<a href="#" onclick="alert('email dialog box not yet built'); e.preventdefault();"><i class="fa fa-envelope-o"></i></a>
+			</div>
 
 		</div>
 
