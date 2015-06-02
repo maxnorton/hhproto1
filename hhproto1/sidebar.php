@@ -9,6 +9,8 @@
 		</div>
 		<div class="widget-content">
 			<p>Heidi Hall is a lifelong resident of Northern California, and is excited and ready to serve as the next Congresswoman for the 1st Congressional District. Raised by teachers, and as a daughter and mother of veterans, she knows full well the value of hard work. She is prepared to provide the vision and leadership that the people of the North State need.</p>
+		
+			<p><a href="mailto:email@heidihallemail.com"><i class="fa fa-envelope-o" style="padding-right:15px;"></i> email@heidihallemail.com</a></p>
 		</div>
 	</div>	
 
