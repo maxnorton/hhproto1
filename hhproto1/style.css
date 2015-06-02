@@ -155,7 +155,7 @@
 	x-display: none; /* hide site title and tagline on single post pages */
 }
 
-.post-inner {
+.single .post-inner {
 	padding: 0 0 60px;
 }
 
