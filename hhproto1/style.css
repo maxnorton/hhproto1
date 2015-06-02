@@ -130,6 +130,16 @@
 	margin-top: 100px;
 }
 
+.share {
+	display: table-row;
+	width: 100%;
+}
+.share > span {
+	display: table-cell;
+	vertical-align: middle;
+	width: 31%;
+}
+
 /* Post formatting --------------- */
 .featured-image {
 	max-height: 250px;
