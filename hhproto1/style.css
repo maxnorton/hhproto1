@@ -110,6 +110,11 @@
 	border-radius: 5px;
 }
 
+.credits p {
+	text-align: left;
+	text-transform: none;
+}
+
 /* Bio widget ------------------- */
 .widget-bio {
 	position: relative;
