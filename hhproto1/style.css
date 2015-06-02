@@ -141,8 +141,23 @@
 }
 .share > span {
 	display: table-cell;
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-size: .8em;
 	vertical-align: middle;
-	width: 31%;
+	width: 24%;
+}
+
+.share > span a {
+	color: rgb(11,147,235);
+	transition: color 0.5s;
+}
+
+.share > span a:hover {
+	color: #CA2017;
+}
+
+.share > span a:hover i {
+	text-decoration: none;
 }
 
 /* Post formatting --------------- */

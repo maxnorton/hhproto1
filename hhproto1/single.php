@@ -107,6 +107,9 @@
 									<span>
 										<g:plusone href="<?php the_permalink(); ?>"></g:plusone>
 									</span>
+									<span>
+										<a href="#" onclick="alert('email dialog box not yet built'); e.preventdefault();"><i class="fa fa-envelope-o" style="padding-right:15px;"></i> Email this</a>
+									</span>
 								</div>
 
 							</div>
