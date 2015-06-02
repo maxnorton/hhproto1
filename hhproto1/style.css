@@ -136,11 +136,13 @@
 }
 
 .share {
-	display: table-row;
-	width: 100%;
+	x-display: table-row;
+	x-width: 100%;
 }
 .share > span {
-	display: table-cell;
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 20px;
 	font-family: 'Lato', Helvetica, sans-serif;
 	font-size: .8em;
 	vertical-align: middle;
@@ -170,8 +172,13 @@
 	x-display: none; /* hide site title and tagline on single post pages */
 }
 
+.post-inner {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
 .single .post-inner {
-	padding: 0 0 60px;
+	padding: 0 3px 60px;
 }
 
 .post-navigation {
