@@ -150,6 +150,16 @@
 	x-display: none; /* hide site title and tagline on single post pages */
 }
 
+.post-inner {
+	padding: 0 0 60px;
+}
+
+.post-navigation {
+	border-top: 0 none;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+
 /* Fake responsiveness ------------- */
 .toggles {
 	display: none !important; /* hide mobile menu */
