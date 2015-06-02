@@ -46,6 +46,10 @@
 						    		wp_link_pages($args); 
 								?>
 							
+								<div class="share">
+									<div class="fb-share-button" data-href="<?php the_permalink(); ?>" data-layout="button_count"></div>
+								</div>
+
 							</div>
 						
 						<?php endif; ?>
