@@ -29,7 +29,9 @@
 	display: inline-block;
 	font-family: "open sans", arial, sans-serif;
 	margin: 0 0;
-	padding: 8px 5px;}
+	padding: 8px 5px;
+	width: 60px;
+}
 
 .header-image {
 	x-max-height: 430px;
@@ -41,7 +43,7 @@
 
 .header {
 	padding-top: 7px;
-	padding-left: 110px;
+	padding-left: 70px;
 }
 
 .header .section-inner {
@@ -62,7 +64,6 @@
 }
 
 .blog-title {
-	font-size: 1.9em;
 	line-height: 100%;
 	text-transform: uppercase;
 }

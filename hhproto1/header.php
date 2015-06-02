@@ -32,7 +32,7 @@
 		<div class="topbar">
 
 			<a class="topbar-anchor" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
-				Heidi Hall
+				<img src="<?php echo   get_stylesheet_directory_uri() . '/images/signature.gif'; ?>" alt="Heidi Hall" class="signature" />
 			</a>
 
 			<a class="topbar-share">
