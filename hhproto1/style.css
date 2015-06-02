@@ -58,6 +58,7 @@
 .blog-tagline {
 	font-family: "open sans", arial, sans-serif;
 	text-align: left;
+	text-shadow: 0 0 5px black;
 }
 
 .blog-title {
