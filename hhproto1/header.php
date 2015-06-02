@@ -54,7 +54,7 @@
 			</a>
 
 			<div class="topbar-share">
-				<a href="https://facebook.com/sharer/sharer.php"><i class="fa fa-facebook"></i></a>
+				<a href="https://facebook.com/sharer/sharer.php" target="_blank"><i class="fa fa-facebook"></i></a>
 				<a href="#" onclick="alert('email dialog box not yet built'); e.preventdefault();"><i class="fa fa-envelope-o"></i></a>
 			</div>
 

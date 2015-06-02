@@ -90,6 +90,11 @@
 	display: none;
 }
 
+.topbar-share a {
+	display: inline-block;
+	padding: 10px;
+}
+
 .transparent-white .topbar-share {
 	display: inline-block;
 }
@@ -149,16 +154,21 @@
 	width: 24%;
 }
 
-.share > span a {
+.share > span a,
+.topbar-share a,
+.share > span a:visited,
+.topbar-share a:visited {
 	color: rgb(11,147,235);
 	transition: color 0.5s;
 }
 
-.share > span a:hover {
+.share > span a:hover,
+.topbar-share a:hover {
 	color: #CA2017;
 }
 
-.share > span a:hover i {
+.share > span a:hover i,
+.topbar-share a:hover i {
 	text-decoration: none;
 }
 
