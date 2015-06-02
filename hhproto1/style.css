@@ -116,7 +116,7 @@
 }
 
 /* Bio widget ------------------- */
-.widget-bio {
+.sidebar .widget {
 	position: relative;
 	top: -122px;
 }
