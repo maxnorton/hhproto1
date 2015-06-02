@@ -36,8 +36,8 @@
 			</a>
 
 			<a class="topbar-share">
-				<img src="<?php echo get_stylesheet_directory_uri() . '/images/facebook-icon.png'; ?>" class="facebook shareicon" />
-				<img src="<?php echo get_stylesheet_directory_uri() . '/images/email.png'; ?>" class="email shareicon" />
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-envelope-o"></i>
 			</a>
 
 		</div>
