@@ -126,7 +126,7 @@
 	top: -122px;
 }
 
-.bio-image {
+.sidebar .widget:first-of-type {
 	border: 2px solid #ca2017;
 	padding: 8px;
 	border-radius: 5px;
@@ -136,8 +136,8 @@
 	background: #fff;
 }
 
-.widget-bio .widget-title {
-	margin-top: 100px;
+.sidebar .widget:nth-of-type(2) {
+	border-top: 0;
 }
 
 .share {
