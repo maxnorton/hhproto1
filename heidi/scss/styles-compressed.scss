@@ -1,0 +1,258 @@
+/* Stylesheet for Heidi theme v1.0
+This file is compressed and imported by style.css. Header info required by Wordpress is included directly in style.scss to avoid compression.
+File created date: 08.12.2015
+Last modified date: 08.12.2015
+By: Max Norton, maxbnorton@gmail.com
+*/
+
+/* Table of Contents
+TODO
+FONT AND COLOR PALETTE
+RESETS AND OVERRIDES
+LINKS AND TYPE
+LAYOUT
+$topbar
+$header
+$navigation
+$sidebar
+	$bio-widget
+$post
+RESPONSIVENESS
+MISCELLANEOUS
+*/
+
+/* TODO:
+1. What's in $navigation and why is it hidden?
+2. In topbar, find more semantic way to do share reveal than .transparent-white .topbar-share.
+3. Turn 'fake responsiveness' into something production-ready.
+*/
+
+/* FONT AND COLOR PALETTE: 
+------------------------------ */
+	$open: "Open Sans", Arials, sans-serif;
+	$lato: "Lato", Helvetica, sans-serif;
+	$black: #000;
+	$blue: #0B93EB;
+	$gray: #DDD;
+	$red: #CA2017;
+	$white: #FFF;
+	$white75: rgba(255,255,255,0.75);	
+
+
+/* RESETS AND OVERRIDES
+------------------------------ 
+See lovecraft/style.css for CSS resets.
+*/
+
+
+/* LINKS AND TYPE
+------------------------------ */
+.blog-title a,
+.header {
+	color: $white;
+}
+
+.blog-tagline,
+.blog-title,
+.header {
+	font-family: $open;
+	text-align: left;
+	text-shadow: 0 0 5px $black;
+}
+
+.blog-title {
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+.blog-tagline {
+	font-style: normal;
+	font-weight: normal;
+	margin-top: 8px;
+}
+
+.credits p {
+	text-align: left;
+	text-transform: none;
+}
+
+.share > span {
+	display: inline-block;
+	font-family: $lato;
+	font-size: .8em;
+	margin-top: 20px;
+	margin-right: 20px;
+	vertical-align: middle;
+	width: 24%;
+}
+
+.share > span a,
+.share > span a:visited,
+.topbar-share a,
+.topbar-share a:visited {
+	color: $blue;
+	transition: color 0.5s;
+
+	&:hover {
+		color: $red;
+
+		i {
+			text-decoration: none;
+		}
+
+	}
+
+}
+
+.topbar-anchor {
+	background-color: $blue;
+	color: $white;
+	display: inline-block;
+	font-family: $open;
+	margin: 0 0;
+	padding: 8px 5px;
+	width: 60px;
+}
+
+.topbar-share a {
+	display: inline-block;
+	padding: 10px;
+}
+
+/* LAYOUT
+------------------------------ */
+
+/* $topbar */
+.topbar {
+	border-top: 3px solid $blue;
+	perspective: 1000;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1600;
+}
+
+.topbar-share {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+
+.transparent-white .topbar-share {
+	display: inline-block;
+}
+
+.home .transparent-white .topbar-share {
+	display: none;
+}
+
+/* $header */
+.header-wrapper {
+	float: left;
+}
+
+.header {
+	padding-top: 7px;
+	padding-left: 70px;
+
+	.section-inner {
+		margin: 0;
+	}
+
+}
+
+/* $navigation */
+
+.navigation {
+	display:none;
+}
+
+/* $sidebar */
+.sidebar .widget {
+	position: relative;
+	top: -122px;
+}
+
+	/* $bio-widget */
+	.sidebar .widget:first-of-type {
+		border: 2px solid #ca2017;
+		padding: 8px;
+		border-radius: 5px;
+		width: 186px;
+		float: right;
+		margin: 0 0 2px 15px;
+		background: #fff;
+	}
+
+	.sidebar .widget:nth-of-type(2) {
+		border-top: 0;
+	}
+
+/* $post */
+.featured-image {
+	max-height: 250px;
+	overflow: hidden;
+}
+
+.post-inner {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.single .post-inner {
+	padding: 0 3px 60px;
+}
+
+.post-navigation {
+	border-top: 0 none;
+	border-bottom: 1px solid $gray;
+	margin-bottom: 15px;
+}
+
+.no-post-nav-padding {
+	width:100%;
+	height:0;
+	padding: 60px 0 0;
+}
+
+/* RESPONSIVENESS
+------------------------------ */
+
+/* Fake responsiveness ------------- */
+.toggles {
+	display: none !important; /* hide mobile menu */
+}
+
+@media (max-width:600px) {
+	.header {
+		max-width: 330px;
+	}
+	.blog-title {
+		margin: 0;
+	}
+	.blog-tagline {
+		display: block;
+		padding-left: 24px;
+	}
+}
+
+/* MISCELLANEOUS
+------------------------------ */
+
+.transparent-white {
+	background-color: $white;
+	background-color: $white75;
+}
+
+.shareicon {
+	height: 24px;
+	width: 24px;
+	margin: 0 10px;
+}
+
+.facebook {
+	position: relative;
+	top: 5px;
+	border-radius: 5px;
+}
