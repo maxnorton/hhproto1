@@ -23,8 +23,7 @@ MISCELLANEOUS
 
 /* TODO:
 1. What's in $navigation and why is it hidden?
-2. In topbar, find more semantic way to do share reveal than .transparent-white .topbar-share.
-3. Turn 'fake responsiveness' into something production-ready.
+2. Turn 'fake responsiveness' into something production-ready.
 */
 
 /* FONT AND COLOR PALETTE: 
@@ -139,11 +138,11 @@ See lovecraft/style.css for CSS resets.
 	top: 5px;
 }
 
-.transparent-white .topbar-share {
+.overlay-visible .topbar-share {
 	display: inline-block;
 }
 
-.home .transparent-white .topbar-share {
+.home .overlay-visible .topbar-share {
 	display: none;
 }
 
