@@ -9,6 +9,7 @@ function theme_enqueue_dependencies() {
     );
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
 	wp_enqueue_script( 'google-platform', 'https://apis.google.com/js/platform.js' );
+	wp_enqueue_script( 'topbar-overlay', get_stylesheet_directory_uri() . 'js/topbar.js' );
 }
 
 // Archive navigation function, adapted from Lovecraft's original function to add classes to the links
