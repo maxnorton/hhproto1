@@ -41,6 +41,7 @@ x-10. Make $navigation visible and functional on mobile.
 	$lato: "Lato", Helvetica, sans-serif;
 	$black: #000;
 	$blue: #0B93EB;
+	$darkgray: #333;
 	$gray: #DDD;
 	$red: #CA2017;
 	$white: #FFF;
@@ -165,6 +166,15 @@ See lovecraft/style.css for CSS resets.
 .topbar-share a {
 	display: inline-block;
 	padding: 10px;
+}
+
+.format-aside {
+	background-color: $darkgray;
+
+	.post-content p {
+		color: $white;
+		font-family: $lato;
+	}
 }
 
 /* LAYOUT
