@@ -56,4 +56,14 @@ function heidi_sidebar_mobile_reg() {
 	));
 }
 
+function heidi_print_bio_excerpt( $bio_post_id ) {
+	global $bio_excerpt_content;
+	$page_object = get_post( $bio_post_id );
+	$full_bio = apply_filters( 'the_content', $page_object->post_content );
+	$more_position = strpos( $full_bio, '<!--more-->' );
+	$excerpted_bio = substr( $full_bio, 0, $more_position);
+	$bio_excerpt_content = $excerpted_bio.'<p><a href="/about-heidi-hall" class="bio-link">Read more...</a></p>';
+	return $bio_excerpt_content;
+}
+
 ?>

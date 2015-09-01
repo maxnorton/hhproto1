@@ -8,6 +8,7 @@ By: Max Norton, maxbnorton@gmail.com
 /* Table of Contents
 TODO
 FONT AND COLOR PALETTE
+MIXINS
 RESETS AND OVERRIDES
 LINKS AND TYPE
 LAYOUT
@@ -45,6 +46,14 @@ x-1. What's in $navigation and why is it hidden? (See #10.)
 	$white: #FFF;
 	$white75: rgba(255,255,255,0.75);	
 
+/* MIXINS
+______________________________ */
+	@mixin bioImage() {
+		border: 2px solid #ca2017;
+		padding: 8px;
+		border-radius: 5px;
+		width: 186px;
+	}
 
 /* RESETS AND OVERRIDES
 ------------------------------ 
@@ -173,6 +182,38 @@ See lovecraft/style.css for CSS resets.
 	display: none;
 }
 
+/* sidebar-mobile */
+.mobile-dropdown-wrapper {
+	margin: 0 auto;
+	max-width: 90%;
+}
+
+.mobile-menu {
+	border-top: 1px solid $gray;
+}
+
+.sidebar-mobile .widget:first-of-type {
+	@include bioImage();
+	float: left;
+	margin: 30px 15px 0 15px;
+
+	& + .widget {
+		border-top: 0 none;
+	}
+
+}
+
+.mobile-dropdown-wrapper .mobile-search {
+	display: inherit;
+}
+
+@media(max-width: 1000px) {
+	.mobile-menu a {
+		color: $red;
+		font-size: 1em;
+	}
+}
+
 /* $header */
 .header-wrapper {
 	float: left;
@@ -209,17 +250,22 @@ See lovecraft/style.css for CSS resets.
 
 	/* $bio-widget */
 	.sidebar .widget:first-of-type {
-		border: 2px solid #ca2017;
-		padding: 8px;
-		border-radius: 5px;
-		width: 186px;
+		background-color: $white;
+		@include bioImage();
 		float: right;
 		margin: 0 0 2px 15px;
-		background: #fff;
 	}
 
 	.sidebar .widget:nth-of-type(2) {
 		border-top: 0;
+	}
+
+	.bio-link {
+		text-align: right;
+	}
+
+	.bio-email {
+		text-align: center;
 	}
 
 /* $post */

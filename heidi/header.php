@@ -42,15 +42,7 @@
 					<div class="bar"></div>
 					
 				</div>
-				
-				<!--div class="search-toggle toggle">
-					
-					<div class="genericon genericon-search"></div>
-					
-				</div>
-				
-				<div class="clear"></div-->
-				
+								
 				<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
 					<img src="<?php echo   get_stylesheet_directory_uri() . '/images/signature.gif'; ?>" alt="Heidi Hall" class="signature" />
 				</a>
@@ -63,6 +55,53 @@
 			</div>
 
 		</div>
+
+		<div class="navigation no-padding">
+			
+			<div class="section-inner">
+				
+				<ul class="mobile-menu bg-white">
+
+					<div class="mobile-dropdown-wrapper">
+				
+						<?php get_sidebar( 'mobile' ); ?>
+
+						<div class="mobile-search">
+						
+							<?php get_search_form(); ?>
+						
+						</div>		
+
+					</div>		
+
+				</ul>
+				
+				<ul class="main-menu">
+				
+					<?php if ( has_nav_menu( 'primary' ) ) {
+																	
+						wp_nav_menu( array( 
+						
+							'container' => '', 
+							'items_wrap' => '%3$s',
+							'theme_location' => 'primary'
+														
+						) ); } else {
+					
+						wp_list_pages( array(
+						
+							'container' => '',
+							'title_li' => ''
+						
+						));
+						
+					} ?>
+					
+				</ul>
+								
+			</div> <!-- /section-inner -->
+			
+		</div> <!-- /navigation -->
 
 		<div class="header-wrapper">
 		
@@ -99,49 +138,6 @@
 			</div> <!-- /header -->
 		
 		</div> <!-- /header-wrapper -->
-		
-		<div class="navigation bg-white no-padding">
-			
-			<div class="section-inner">
-				
-				<ul class="mobile-menu">
-				
-					<?php get_sidebar( 'mobile' ); ?>
-					
-				</ul>
-				
-				<div class="mobile-search">
-				
-					<?php get_search_form(); ?>
-				
-				</div>
-				
-				<ul class="main-menu">
-				
-					<?php if ( has_nav_menu( 'primary' ) ) {
-																	
-						wp_nav_menu( array( 
-						
-							'container' => '', 
-							'items_wrap' => '%3$s',
-							'theme_location' => 'primary'
-														
-						) ); } else {
-					
-						wp_list_pages( array(
-						
-							'container' => '',
-							'title_li' => ''
-						
-						));
-						
-					} ?>
-					
-				</ul>
-								
-			</div> <!-- /section-inner -->
-			
-		</div> <!-- /navigation -->
 		
 		<?php if ( is_singular() && has_post_thumbnail() ) : ?>
 		
