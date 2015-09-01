@@ -33,9 +33,29 @@
 		
 		<div class="topbar">
 
-			<a class="topbar-anchor" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
-				<img src="<?php echo   get_stylesheet_directory_uri() . '/images/signature.gif'; ?>" alt="Heidi Hall" class="signature" />
-			</a>
+			<div class="toggles topbar-anchor">
+						
+				<div class="nav-toggle toggle">
+					
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+					
+				</div>
+				
+				<!--div class="search-toggle toggle">
+					
+					<div class="genericon genericon-search"></div>
+					
+				</div>
+				
+				<div class="clear"></div-->
+				
+				<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
+					<img src="<?php echo   get_stylesheet_directory_uri() . '/images/signature.gif'; ?>" alt="Heidi Hall" class="signature" />
+				</a>
+
+			</div> <!-- /toggles /topbar-anchor -->
 
 			<div class="topbar-share">
 				<a href="https://facebook.com/sharer/sharer.php" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -77,26 +97,6 @@
 				</div> <!-- /section-inner -->
 						
 			</div> <!-- /header -->
-			
-			<div class="toggles">
-						
-				<div class="nav-toggle toggle">
-					
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-					
-				</div>
-				
-				<div class="search-toggle toggle">
-					
-					<div class="genericon genericon-search"></div>
-					
-				</div>
-				
-				<div class="clear"></div>
-				
-			</div> <!-- /toggles -->
 		
 		</div> <!-- /header-wrapper -->
 		
@@ -106,24 +106,7 @@
 				
 				<ul class="mobile-menu">
 				
-					<?php if ( has_nav_menu( 'primary' ) ) {
-																		
-						wp_nav_menu( array( 
-						
-							'container' => '', 
-							'items_wrap' => '%3$s',
-							'theme_location' => 'primary'
-														
-						) ); } else {
-					
-						wp_list_pages( array(
-						
-							'container' => '',
-							'title_li' => ''
-						
-						));
-						
-					} ?>
+					<?php get_sidebar( 'mobile' ); ?>
 					
 				</ul>
 				
@@ -155,9 +138,7 @@
 					} ?>
 					
 				</ul>
-				
-				<div class="clear"></div>
-				
+								
 			</div> <!-- /section-inner -->
 			
 		</div> <!-- /navigation -->

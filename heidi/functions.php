@@ -41,4 +41,19 @@ function heidi_archive_navigation() {
 	<?php endif;
 }
 
+// Add mobile sidebar widget area, instead of a mobile menu
+add_action( 'widgets_init', 'heidi_sidebar_mobile_reg' ); 
+
+function heidi_sidebar_mobile_reg() {
+	register_sidebar(array(
+		'name' => __( 'Mobile dropdown sidebar', 'heidi' ),
+		'id' => 'sidebar-mobile',
+		'description' => __( 'Widgets in this area will be shown in the dropdown mobile sidebar.', 'heidi' ),
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+		'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
+		'after_widget' => '</div><div class="clear"></div></div>'
+	));
+}
+
 ?>

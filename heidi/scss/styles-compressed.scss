@@ -113,12 +113,31 @@ See lovecraft/style.css for CSS resets.
 
 .topbar-anchor {
 	background-color: $blue;
+	border-top: 0 none;
 	color: $white;
 	display: inline-block;
 	font-family: $open;
 	margin: 0 0;
-	padding: 8px 5px;
-	width: 60px;
+	padding: 0 5px;
+
+	& > a {
+		display: inline-block;
+		margin-left: 5px;
+		padding: 8px 5px;
+		width: 60px;
+	}
+
+	.bar {
+		background-color: $white;
+	}
+
+}
+
+@media(max-width: 600px) {
+	.toggle {
+		margin-top: 0;
+		position: relative;
+	}
 }
 
 .topbar-share a {
@@ -161,18 +180,25 @@ See lovecraft/style.css for CSS resets.
 
 .header {
 	padding-top: 7px;
-	padding-left: 70px;
+	padding-left: 90px;
 
 	.section-inner {
 		margin: 0;
 	}
+}
 
+@media (max-width: 1000px) {
+	.header {
+		padding-left: 120px;
+	}
 }
 
 /* $navigation */
 
-.navigation {
-	display:none;
+@media (min-width:1000px) {
+	.navigation > * {
+		display:none;
+	}
 }
 
 /* $sidebar */
@@ -227,10 +253,6 @@ See lovecraft/style.css for CSS resets.
 ------------------------------ */
 
 /* Fake responsiveness ------------- */
-.toggles {
-	display: none !important; /* hide mobile menu */
-}
-
 @media (max-width:600px) {
 	.header {
 		max-width: 330px;
@@ -242,6 +264,13 @@ See lovecraft/style.css for CSS resets.
 		display: block;
 		padding-left: 24px;
 	}
+}
+
+.sidebar-mobile {
+
+	.bio-image img {
+	}
+
 }
 
 /* MISCELLANEOUS
