@@ -26,13 +26,14 @@ x-1. What's in $navigation and why is it hidden? (See #10.)
 x-2. Turn 'fake responsiveness' into something production-ready.
 x-3. Style asides so they look cooler.
 x-4. Add a video content type.
-5. Fix share bar in single posts.
+x-5. Fix share bar in single posts.
 6. Fix topbar share icons.
 7. Get better header photo.
 8. Does Heidi like including the archive list?
 9. Is the page nav just hidden on single.php? Is that good?
 x-10. Make $navigation visible and functional on mobile.
 11. Strip tags from page title.
+12. Find more semantic solution for .post-inner .post, .post-inner .post-inner.
 */
 
 /* FONT AND COLOR PALETTE: 
@@ -111,9 +112,9 @@ See lovecraft/style.css for CSS resets.
 	font-family: $lato;
 	font-size: .8em;
 	margin-top: 20px;
-	margin-right: 20px;
+	margin-right: 1%;
 	vertical-align: middle;
-	width: 24%;
+	width: 20%;
 }
 
 .share > span a,
@@ -329,8 +330,11 @@ See lovecraft/style.css for CSS resets.
 	padding-right: 3px;
 }
 
-.single .post-inner {
-	padding: 0 3px 60px;
+.post-inner .post,
+.post-inner .post-inner {
+	// Since single.php includes a post-inner div but then calls a content template on the basis of post-format, which also uses post-inner and post divs, this is necessary to avoid double padding and double borders. It could probably stand to have a more semantic solution.
+	border: 0 none;
+	padding: 0 0 0 0;
 }
 
 .post-navigation {
