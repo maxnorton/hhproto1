@@ -1,5 +1,11 @@
 <?php
 
+// Add aside and video post formats, overriding lovecraft default formats
+add_action( 'after_setup_theme', 'heidi_setup', 11 );
+function heidi_setup() {
+	add_theme_support( 'post-formats', array( 'aside', 'video' ) );
+}
+
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_dependencies' );
 function theme_enqueue_dependencies() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );

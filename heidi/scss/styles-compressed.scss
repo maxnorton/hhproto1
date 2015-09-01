@@ -25,7 +25,7 @@ MISCELLANEOUS
 x-1. What's in $navigation and why is it hidden? (See #10.)
 x-2. Turn 'fake responsiveness' into something production-ready.
 x-3. Style asides so they look cooler.
-4. Add a video content type.
+x-4. Add a video content type.
 5. Fix share bar in single posts.
 6. Fix topbar share icons.
 7. Get better header photo.
@@ -168,14 +168,28 @@ See lovecraft/style.css for CSS resets.
 	padding: 10px;
 }
 
-.format-aside {
+.format-aside,
+.format-video {
 	background-color: $darkgray;
 
 	.post-content p {
 		color: $white;
 		font-family: $lato;
 	}
+
+	.post-header .post-title {
+		text-align: center;
+		
+		a {
+				color: $white;
+				font-family: $lato;
+		}
+
+	}
 }
+
+
+
 
 /* LAYOUT
 ------------------------------ */
