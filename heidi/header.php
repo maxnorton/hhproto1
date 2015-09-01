@@ -109,6 +109,8 @@
 			
 				<div class="section-inner">
 					
+					<div class="title-padding-responsive"></div>
+
 					<?php if ( get_theme_mod( 'lovecraft_logo' ) ) : ?>
 				
 				        <a class="blog-logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>

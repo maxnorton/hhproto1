@@ -18,7 +18,6 @@ $navigation
 $sidebar
 	$bio-widget
 $post
-RESPONSIVENESS
 MISCELLANEOUS
 */
 
@@ -33,6 +32,7 @@ x-1. What's in $navigation and why is it hidden? (See #10.)
 8. Does Heidi like including the archive list?
 9. Is the page nav just hidden on single.php? Is that good?
 10. Make $navigation visible and functional on mobile.
+11. Strip tags from page title.
 */
 
 /* FONT AND COLOR PALETTE: 
@@ -85,6 +85,19 @@ See lovecraft/style.css for CSS resets.
 	font-style: normal;
 	font-weight: normal;
 	margin-top: 8px;
+}
+
+@media (max-width:600px) {
+	.header {
+		max-width: 330px;
+	}
+	.blog-title {
+		margin: 0;
+	}
+	.blog-tagline {
+		display: block;
+		padding-left: 24px;
+	}
 }
 
 .credits p {
@@ -221,16 +234,28 @@ See lovecraft/style.css for CSS resets.
 
 .header {
 	padding-top: 7px;
-	padding-left: 90px;
+	padding-left: 0;
 
 	.section-inner {
 		margin: 0;
 	}
 }
 
+.title-padding-responsive {
+	float: left;
+	height: 4em;
+	width: 90px;
+}
+
 @media (max-width: 1000px) {
-	.header {
-		padding-left: 120px;
+	.title-padding-responsive {
+		width: 120px;
+	}
+}
+
+@media (max-width: 600px) {
+	.title-padding-responsive {
+		float: none;
 	}
 }
 
@@ -295,29 +320,6 @@ See lovecraft/style.css for CSS resets.
 	padding: 60px 0 0;
 }
 
-/* RESPONSIVENESS
------------------------------- */
-
-/* Fake responsiveness ------------- */
-@media (max-width:600px) {
-	.header {
-		max-width: 330px;
-	}
-	.blog-title {
-		margin: 0;
-	}
-	.blog-tagline {
-		display: block;
-		padding-left: 24px;
-	}
-}
-
-.sidebar-mobile {
-
-	.bio-image img {
-	}
-
-}
 
 /* MISCELLANEOUS
 ------------------------------ */
