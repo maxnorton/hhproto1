@@ -207,11 +207,12 @@ See lovecraft/style.css for CSS resets.
 
 .sidebar-mobile .widget:first-of-type {
 	@include bioImage();
-	float: left;
-	margin: 30px 15px 0 15px;
+	margin: 5em auto 0;
 
 	& + .widget {
 		border-top: 0 none;
+		margin-top: 2em;
+		padding-top: 0;
 	}
 
 }
