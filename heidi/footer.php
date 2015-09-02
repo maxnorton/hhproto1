@@ -35,7 +35,7 @@
 	<div class="credits-inner section-inner">
 	
 		<p>Header photo &copy; Erin Thiem, <a href="http://www.outsideinn.com">www.outsideinn.com</a></p>
-		<p><span><?php _e('Theme by','lovecraft') ?> Max Norton based on <em>Lovecraft</em> by <a href="http://www.andersnoren.se">Anders Norén</a></span></p>
+		<p><span><?php _e('Theme by','lovecraft') ?> <a href="https://github.com/maxnorton">Max Norton</a> based on <em>Lovecraft</em> by <a href="http://www.andersnoren.se">Anders Norén</a></span></p>
 		<p>All other content &copy; 2015 Heidi Hall</p>
 		<p><?php _e('Powered by', 'lovecraft'); ?> <a href="http://www.wordpress.org">WordPress</a></p>
 	
