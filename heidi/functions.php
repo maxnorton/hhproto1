@@ -18,6 +18,31 @@ function theme_enqueue_dependencies() {
 	wp_enqueue_script( 'topbar-overlay', get_stylesheet_directory_uri() . '/js/topbar.js' );
 }
 
+/**
+ * Filters wp_title to print a neat <title> tag based on what is being viewed.
+ *
+ * @param string $title Default title text for current view.
+ * @param string $sep Optional separator.
+ * @return string The filtered title.
+ */
+function heidi_wp_title( $input_title, $sep ) {
+	$title = strip_tags( html_entity_decode($input_title) );
+
+	if ( is_feed() ) {
+		return $title;
+	}
+	
+	global $page, $paged;
+
+	// Add a page number if necessary:
+	if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
+		$title .= " $sep " . sprintf( __( 'Page %s', '_s' ), max( $paged, $page ) );
+	}
+
+	return $title;
+}
+add_filter( 'wp_title', 'heidi_wp_title', 10, 2 );
+
 // Archive navigation function, adapted from Lovecraft's original function to add classes to the links
 function heidi_archive_navigation() {
 	global $wp_query;
@@ -71,5 +96,4 @@ function heidi_print_bio_excerpt( $bio_post_id ) {
 	$bio_excerpt_content = $excerpted_bio.'<p><a href="/about-heidi-hall" class="bio-link">Read more...</a></p>';
 	return $bio_excerpt_content;
 }
-
 ?>
